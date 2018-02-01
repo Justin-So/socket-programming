@@ -1,0 +1,12 @@
+High Level Description: I created a server and a client that connect through a socket connection in Java. When the Server is created, it'll parse through a default dictionary or a provided dictionary. Once a client connects to the server, it'll create a thread and a new instance of the Hangman Game. The server selects a word and sends it over to the client as a packet. The client will then guess characters (bad guesses will be filtered out by the Client) and will continue until either the user guesses the word correctly or has 6 incorrect guesses, in which the user will lose. If a character is guessed correctly, the server will return a new message that shows where in the string the correct guess belongs and will continue to listen for a new guess.
+
+Team Members: Justin So
+
+
+To compile code: run $make
+
+To run server: Open a terminal, cd into the directory and run $java Server (Port Number) (words.txt)
+	Port Number is required but words.txt is not required.
+	
+To run Client: Open a terminal, cd into the directory and run $java Client (IP Address) (Port Number)
+	Both IP Address and port number are required.
